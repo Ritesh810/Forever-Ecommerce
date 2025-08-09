@@ -91,7 +91,7 @@ function Product() {
             </div>
          </div>
        </div>
-       {/* ---------------- Description % Review Section --------------- */}
+       {/* ------------- Description % Review Section ------------- */}
 
        <div className='mt-20'>
           <div className='flex'>
