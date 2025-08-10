@@ -72,12 +72,12 @@ function Collection() {
 
   return (
     <div className='flex flex-col sm:flex-row gap-1 sm:gap-10 pt-10 border-t'>
-      {/* Filter Options */}
+      {/* ---------- Filter Options ----------- */}
       <div className='min-w-60'>
         <p onClick={() => setShowFilter(!showFilter)} className='my-2 text-xl flex items-center cursor-pointer gap-2'>FILTERS
           <img src={assets.dropdown_icon} alt="dropdown icon" className= {`h-3 sm:hidden ${showFilter ? 'rotate-90' : ''}`} />
         </p>
-        {/* Category Filter */}
+        {/* ----------- Category Filter ------------ */}
         <div className={`border border-gray-300 pl-5 py-3 mt-6 ${showFilter ? '' : 'hidden'} sm:block`}>
           <p className='text-lg font-semibold'>Category</p>
           <div className='flex flex-col gap-2 text-sm font-light text-gray-700'>
@@ -92,7 +92,7 @@ function Collection() {
             </p>
           </div>
         </div>
-        {/* SubCategory Filter */}
+        {/* ------------ SubCategory Filter ------------- */}
         <div className={`border border-gray-300 pl-5 py-5 mt-6 ${showFilter ? '' : 'hidden'} sm:block`}>
           <p className='text-lg font-semibold'>TYPE</p>
           <div className='flex flex-col gap-2 text-sm font-light text-gray-700'>
@@ -109,11 +109,11 @@ function Collection() {
         </div>
       </div>
 
-      {/* Right Side  */}
+      {/* ----------- Right Side ----------- */}
       <div className='flex-1'>
         <div className='flex justify-between text-base sm:text-2xl mb-4'>
           <Title text1={'ALL'} text2={'COLLECTIONS'}/>
-          {/* Product Sort  */}
+          {/* ----------- Product Sort  ----------- */}
           <select onChange={(e) => setSortType(e.target.value)} className='border-2 outline-none border-gray-300 text-sm px-2' name="" id="">
             <option value="relevant">Sort by: Relevant</option>
             <option value="low-high">Sort by: Low to High</option>
@@ -121,7 +121,7 @@ function Collection() {
           </select>
         </div>
 
-        {/* Map Product  */}
+        {/* ----------- Map Product  ----------- */}
         <div className='grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 gap-y-6'>
           {
             filterProducts.map((item, index)=>(

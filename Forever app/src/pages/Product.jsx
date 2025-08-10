@@ -56,7 +56,7 @@ function Product() {
             </div>
          </div>
 
-         {/* ------------- Product Info ----------- */}
+         {/* ----------- Product Info ----------- */}
 
          <div className="flex-1">
             <h1 className='font-medium text-2xl mt-2'>{productData.name}</h1>
