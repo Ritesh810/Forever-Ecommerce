@@ -33,7 +33,7 @@ function Orders() {
                   <p className='min-w-2 h-2 rounded-full bg-green-500'></p>
                   <p className='text-small text-base'>Ready to Ship</p>
                 </div>
-                <button>Track Order</button>
+                <button className='border px-4 py-2 text-sm font-medium rounded-sm'>Track Order</button>
               </div>
             </div>
           ))
