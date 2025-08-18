@@ -1,5 +1,6 @@
 import React from 'react'
 import { assets } from '../assets/assets'
+import { NavLink } from 'react-router-dom'
 
 function Footer() {
   return (
@@ -14,17 +15,29 @@ function Footer() {
             <div>
                 <p className='text-xl font-medium mb-5'>COMPANY</p>
                 <ul className='flex flex-col gap-1 text-gray-600'>
-                    <li>Home</li>
-                    <li>About us</li>
-                    <li>Delivery</li>
-                    <li>Privacy Policy</li>
+                    <NavLink to="/">
+                        Home
+                    </NavLink>
+                    <NavLink to="/about">
+                        About us
+                    </NavLink>
+                    <NavLink to="/delivery">
+                        Delivery
+                    </NavLink>
+                    <NavLink to="/privacy">
+                        Privacy Policy
+                    </NavLink>
                 </ul>
             </div>
             <div>
                 <p className='text-xl font-medium mb-5'>GET IN TOUCH</p>
                 <ul className='flex flex-col gap-1 text-gray-600'>
-                    <li>+1 (555) 505 494</li>
-                    <li>contact@foreveryou.com</li>
+                    <NavLink to="tel:+1555505494">
+                        +1 (555) 505 494
+                    </NavLink>
+                    <NavLink to="mailto:contact@foreveryou.com">
+                        contact@foreveryou.com
+                    </NavLink>
                 </ul>
             </div>
         </div>
