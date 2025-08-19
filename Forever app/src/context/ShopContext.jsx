@@ -14,7 +14,6 @@ const ShopContextProvider = (props) => {
     const [cartItems, setCartItems] = useState({});
     const navigate = useNavigate();
 
-
     const addToCart = (itemId, size) => {
 
         if(!size){
